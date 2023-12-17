@@ -1,8 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View, ScrollView} from 'react-native';
-import Carousel from './src/components/carousel';
-import Card from './src/components/card';
-import Menu from './src/components/menu';
+
 export default function App() {
   const cards = [
     { title: 'Manejo Geral', icon: 'retweet' },
