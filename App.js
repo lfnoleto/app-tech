@@ -1,8 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View, ScrollView} from 'react-native';
-import Carousel from './src/components/carousel';
-import Card from './src/components/card';
-import Menu from './src/components/menu';
+
 export default function App() {
   const cards = [
     { title: 'Manejo Geral', icon: 'retweet' },
@@ -19,29 +17,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       
-      <StatusBar style="auto" />
-      <ScrollView>
-          <View style={{backgroundColor: '#08605F', height: 306, width: 393}}>
-            <Text style={{color: 'white', fontSize: 14, marginTop: 60, marginLeft:19}}>Olá,</Text>
-            <Text style={{color: 'white', fontSize: 22, marginLeft:19}}>Lucas</Text>
-            <Carousel style={styles.snap}/>
-          </View>
-          <View>
-            <Text style={styles.title}>
-            Acesso rápido
-            </Text>
-            <View style={styles.card}>
-              {cards.map((card, index) => (
-              <Card key={index} name={card.title} icon={card.icon} />
-              ))}
-            </View>
-          </View>
-          
+   
          
 
-         
-      </ScrollView>
-      <Menu/>
+    
+    
     </View>
   );
 }
